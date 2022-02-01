@@ -13,13 +13,18 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            align-items: stretch;
 
 
 
         }
+        .flexgrow1{
+            flex-grow:2;
+        }
         li {
-
-
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
         }
 
     </style>
@@ -45,7 +50,7 @@
 
     <div class="solution">
         <ul>
-            <li>I am small</li>
+            <li class="flexgrow1">I am small</li>
             <li>I have more content than the very small item.</li>
             <li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
         </ul>
